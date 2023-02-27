@@ -4,6 +4,12 @@ public class Movie
   public string title { get; set; }
   public List<string> genres { get; set; }
 
+  // constructor
+  public Movie()
+  {
+    genres = new List<string>();
+  }
+
   public string Display()
     {
       return $"Id: {movieId}\nTitle: {title}\nGenres: {string.Join(", ", genres)}\n";
